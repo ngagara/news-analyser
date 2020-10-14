@@ -1,0 +1,13 @@
+.header__item {
+  margin-right: 35px;
+}
+
+@media all and (max-width: 500px) {
+  .header__item{
+    margin-right: 11px;
+  }
+}
+
+.header__item:last-child {
+  margin-right: 0;
+}

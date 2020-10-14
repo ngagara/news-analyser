@@ -1,0 +1,10 @@
+.footer__social-nav {
+  order: 3;
+}
+
+@media all and (max-width: 767px) {
+  .footer__social-nav {
+    order: 2;
+    margin-bottom: 120px;
+  }
+}

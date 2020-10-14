@@ -1,0 +1,19 @@
+.cards__item {
+  max-width: 400px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+
+@media all and (max-width: 1024px) {
+  .cards__item {
+    min-height: 420px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .cards__item {
+    min-height: 446px;
+  }
+}

@@ -1,0 +1,19 @@
+.search-failed__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #b6bcbf;
+  max-width: 320px;
+  margin: 16px auto;
+}
+
+@media all and (max-width: 768px) {
+  .search-failed__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 8px auto;
+  }
+}

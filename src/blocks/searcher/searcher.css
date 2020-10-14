@@ -1,0 +1,28 @@
+@import url(../searcher/__conteiner/searcher__conteiner.css);
+@import url(../searcher/__title/searcher__title.css);
+@import url(../searcher/__subtitle/searcher__subtitle.css);
+@import url(../searcher/__form/searcher__form.css);
+@import url(../searcher/__input/searcher__input.css);
+@import url(../searcher/__error/searcher__error.css);
+@import url(../searcher/__button/searcher__button.css);
+
+.searcher {
+  background-image: url(../../images/georgia.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media all and (max-width: 768px) {
+  .searcher {
+    background-image: url(../../images/georgia_ipad_mini.jpg);
+  }
+}
+
+@media all and (max-width: 425px) {
+  .searcher {
+    background-image: url(../../images/georgia_iphoneSE.jpg);
+  }
+}

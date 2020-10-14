@@ -1,0 +1,32 @@
+.cards__button {
+  width: 288px;
+  height: 64px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1a1b22;
+  background: #ffffff;
+  border-radius: 80px;
+  border: none;
+  outline: none;
+}
+
+@media all and (max-width: 1024px) {
+  .cards__button {
+    width: 240px;
+    height: 56px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .cards__button {
+    width: 288px;
+  }
+}
+
+.cards__button:hover {
+  opacity: 0.9;
+}

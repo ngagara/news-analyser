@@ -1,0 +1,12 @@
+.search-failed__image {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 768px) {
+  .search-failed__image {
+    width: 70px;
+    height: 70px;
+  }
+}

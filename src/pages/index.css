@@ -1,7 +1,31 @@
 @import url(../vendor/fonts.css);
 @import url(../vendor/normalize.css);
+@import url(../blocks/links/links.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/searcher/searcher.css);
+@import url(../blocks/author/author.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/preloader/preloader.css);
+@import url(../blocks/search-failed/search-failed.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/result-searcher/result-searcher.css);
 
 
-body {
-  background-color: #000;
-}
+
+
+/* body { border: 1px solid rebeccapurple;}
+h1 { border: 1px solid rebeccapurple;}
+h2 { border: 1px solid rebeccapurple;}
+figure { border: 1px solid rebeccapurple;}
+figcaption { border: 1px solid rebeccapurple;}
+div { border: 1px solid rebeccapurple;}
+section { border: 1px solid rebeccapurple;}
+blockquote { border: 1px solid rebeccapurple;}
+head { border: 1px solid rebeccapurple;}
+a { border: 1px solid rebeccapurple;}
+.p { border: 1px solid rebeccapurple;}
+img { border: 1px solid rebeccapurple;}
+ul { border: 1px solid rebeccapurple;}
+li { border: 1px solid rebeccapurple;} */

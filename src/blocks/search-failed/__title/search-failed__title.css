@@ -1,0 +1,19 @@
+.search-failed__title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #1a1b22;
+  max-width: 356px;
+  margin: 30px auto 0;
+}
+
+@media all and (max-width: 768px) {
+  .search-failed__title {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 12px auto 0;
+  }
+}

@@ -1,0 +1,15 @@
+@import url(../page/__header/page__header.css);
+@import url(../page/__content/page__content.css);
+@import url(../page/__footer/page__footer.css);
+
+.page {
+  max-width: 100%;
+  background: #ffffff;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}

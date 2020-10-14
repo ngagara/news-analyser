@@ -1,0 +1,17 @@
+.cards__date {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #b6bcbf;
+  max-width: 352px;
+  margin: 20px 0 0 24px;
+}
+
+@media all and (max-width: 768px) {
+  .cards__date {
+    max-width: 192px;
+    margin: 16px 0 0 16px;
+  }
+}

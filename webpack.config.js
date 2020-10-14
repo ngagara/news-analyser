@@ -9,10 +9,14 @@ const WebpackMd5Hash = require("webpack-md5-hash");
 const isDev = process.env.NODE_ENV === "development";
 
 module.exports = {
-  entry: { main: "./src/index.js" },
+  entry: {
+    index: "./src/scripts/index.js",
+    about: "./src/scripts/about.js",
+    analytics: "./src/scripts/analytics.js"
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].[chunkhash].js",
+    filename: "./scripts/[name].[chunkhash].js",
   },
   module: {
     rules: [
@@ -52,7 +56,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
+      filename: "./style/[name].[contenthash].css",
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
@@ -64,6 +68,15 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      filename: "index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/about.html",
+      filename: "about.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/analytics.html",
+      filename: "analytics.html"
     }),
     new WebpackMd5Hash(),
     new CleanWebpackPlugin(),

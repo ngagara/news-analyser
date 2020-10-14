@@ -1,0 +1,8 @@
+.footer__social-item {
+  margin-left: 28px;
+}
+
+.footer__social-item:first-child {
+  margin-left: 0;
+}
+

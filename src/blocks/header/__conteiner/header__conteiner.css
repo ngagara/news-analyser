@@ -1,0 +1,12 @@
+.header__conteiner {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+
+@media all and (max-width: 1024px) {
+  .header__conteiner {
+    width: 90%;
+  }
+}
