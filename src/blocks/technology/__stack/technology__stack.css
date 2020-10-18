@@ -1,0 +1,12 @@
+.technology__stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media all and (max-width: 769px) {
+  .technology__stack {
+   width: 100%;
+  }
+}

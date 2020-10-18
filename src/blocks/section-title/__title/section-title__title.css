@@ -1,0 +1,15 @@
+.section-title__title {
+  margin: 0;
+}
+
+@media all and (max-width: 1024px) {
+  .section-title__title {
+    max-width: 336px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .section-title__title {
+    margin-bottom: 16px;
+  }
+}

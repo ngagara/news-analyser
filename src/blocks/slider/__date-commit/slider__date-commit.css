@@ -1,0 +1,21 @@
+.slider__date-commit {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #B6BCBF;
+  padding-top: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+@media all and (max-width: 425px) {
+  .slider__date-commit {
+    padding-top: 16px;
+    margin-left: 16px;
+    margin-bottom: 11px;
+  }
+}

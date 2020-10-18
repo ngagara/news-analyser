@@ -5,15 +5,16 @@
   overflow: hidden;
 }
 
-
 @media all and (max-width: 1024px) {
   .cards__item {
+    min-width: 224px;
     min-height: 420px;
   }
 }
 
 @media all and (max-width: 767px) {
   .cards__item {
+    min-width: 288px;
     min-height: 446px;
   }
 }

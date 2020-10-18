@@ -1,0 +1,8 @@
+@import url(./__paragrahp/client-info__paragraph.css);
+@import url(./__text/client-info__text.css);
+@import url(./__title/client-info__title.css);
+@import url(./__container/client-info__container.css);
+
+.client-info {
+  max-width: 1440px;
+}

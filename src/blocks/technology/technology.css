@@ -1,0 +1,11 @@
+@import url(../technology/__container/technology__container.css);
+@import url(../technology/__icon/technology__icon.css);
+@import url(../technology/__item-conteiner/technology__item-conteiner.css);
+@import url(../technology/__name/technology__name.css);
+@import url(../technology/__stack/technology__stack.css);
+@import url(../technology/__title/technology__title.css);
+
+.technology {
+  max-width: 100%;
+  background: #F5F6F7;
+}

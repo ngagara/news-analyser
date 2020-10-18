@@ -1,0 +1,20 @@
+.analytics__title {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+@media all and (max-width: 1026px) {
+  .analytics__title {
+    font-size: 32px;
+    margin-top: 64px;
+    line-height: 34px;
+    max-width: 668px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .analytics__title {
+    margin-top: 16px;
+    font-size: 30px
+  }
+}

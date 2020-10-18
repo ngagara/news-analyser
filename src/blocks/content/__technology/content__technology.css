@@ -1,0 +1,19 @@
+.content__technology {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 1240px) {
+  .content__technology {
+    padding-top: 40px;
+    padding-bottom: 54px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .content__technology  {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

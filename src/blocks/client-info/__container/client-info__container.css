@@ -1,0 +1,17 @@
+.client-info__container {
+  margin: 80px auto 94px auto;
+  max-width: 80%;
+}
+
+@media all and (max-width: 1024px) {
+  .client-info__container  {
+    margin: 30px auto 54px auto;
+    max-width: 90%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .client-info__container  {
+    margin: 16px auto 30px auto;
+  }
+}

@@ -1,0 +1,26 @@
+.button_grey {
+    width: 288px;
+    height: 64px;
+    color: #1a1b22;
+    border-radius: 80px;
+    background: #FFFFFF;
+  }
+
+  .button_grey:hover {
+    opacity: 0.9;
+  }
+
+  @media all and (max-width: 1024px) {
+    .button_grey {
+      width: 240px;
+      height: 56px;
+    }
+  }
+
+  @media all and (max-width: 767px) {
+    .button_grey {
+      width: 288px;
+    }
+  }
+
+

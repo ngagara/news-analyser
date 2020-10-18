@@ -1,0 +1,7 @@
+.slider__user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 16px;
+}
+

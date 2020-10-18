@@ -1,0 +1,4 @@
+.header__link.header__link_hover-white:hover {
+  color: #FFFFFF;
+  transition: 1s ease;
+}

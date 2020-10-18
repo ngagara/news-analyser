@@ -1,7 +1,4 @@
-@import url(../cards/__header-conteiner/cards__header-conteiner.css);
-@import url(../cards/__analitic-link/cards__analitic-link.css);
-@import url(../cards/__result-title/cards__result-title.css);
-@import url(../cards/__item-conteiner/cards__item-conteiner.css);
+@import url(../cards/__item-container/cards__item-container.css);
 @import url(../cards/__item/cards__item.css);
 @import url(../cards/__link/cards__link.css);
 @import url(../cards/__image/cards__image.css);
@@ -10,6 +7,7 @@
 @import url(../cards/__text/cards__text.css);
 @import url(../cards/__source/cards__source.css);
 @import url(../cards/__button/cards__button.css);
+@import url(../cards/__section-title/cards__section-title.css);
 
 .cards {
   display: flex;

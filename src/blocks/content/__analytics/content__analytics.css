@@ -1,0 +1,17 @@
+.content__analytics {
+  margin: 40px auto;
+  margin-bottom: 80px;
+}
+
+@media all and (max-width: 1026px) {
+  .content__analytics {
+    margin: 32px auto 40px auto;
+  }
+}
+
+
+@media all and (max-width: 425px) {
+  .content__analytics {
+    margin: 16px auto 24px auto;
+  }
+}

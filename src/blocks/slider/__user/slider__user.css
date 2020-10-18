@@ -1,0 +1,11 @@
+.slider__user {
+  display: flex;
+  flex-direction: row;
+  margin-left: 24px;
+}
+
+@media all and (max-width: 425px) {
+  .slider__user {
+    margin-left: 16px;
+  }
+}

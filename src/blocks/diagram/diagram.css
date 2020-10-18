@@ -1,0 +1,20 @@
+@import url(../diagram/__title/diagram__title.css);
+@import url(../diagram/__container/diagram__container.css);
+@import url(../diagram/__header-axis/diagram__header-axis.css);
+@import url(../diagram/__header-axis/diagram__header-axis_data.css);
+@import url(../diagram/__header/diagram__header.css);
+@import url(../diagram/__statistics/diagram__statistics.css);
+@import url(../diagram/__week-days-data/diagram__week-days-data.css);
+@import url(../diagram/__week-days/diagram__week-days.css);
+@import url(../diagram/__liner/diagram__liner.css);
+@import url(../diagram/__liner-number/diagram__liner-number.css);
+@import url(../diagram/__blue-lines/diagram__blue-lines.css);
+@import url(../diagram/__blue-line/diagram__blue-line.css);
+@import url(../diagram/__lines-container/diagram__lines-container.css);
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #F5F6F7;
+}

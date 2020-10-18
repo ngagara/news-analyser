@@ -1,0 +1,9 @@
+.analytics__link_activ {
+  color: #B6BCBF;
+}
+
+.analytics__link_activ::before {
+  content: "/";
+  margin: 0 5px;
+  color: #B6BCBF;
+}

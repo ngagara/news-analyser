@@ -1,0 +1,4 @@
+.slider__user-commit {
+  display: flex;
+  flex-direction: column;
+}

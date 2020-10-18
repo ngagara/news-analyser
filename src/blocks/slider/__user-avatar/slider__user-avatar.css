@@ -1,0 +1,13 @@
+.slider__user-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  align-self: center;
+}
+
+@media all and (max-width: 769px) {
+  .slider__user-avatar {
+    width: 48px;
+    height: 48px;
+  }
+}

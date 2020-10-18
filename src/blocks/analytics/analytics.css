@@ -1,0 +1,18 @@
+@import url(../analytics/__sum/analytics__sum.css);
+@import url(../analytics/__item/analytics__item.css);
+@import url(../analytics/__link/analytics__link.css);
+@import url(../analytics/__links/analytics__links.css);
+@import url(../analytics/__nav/analytics__nav.css);
+@import url(../analytics/__span/analytics__span.css);
+@import url(../analytics/__title/analytics__title.css);
+@import url(../analytics/__link/analytics__link_activ.css);
+
+.analytics {
+  width: 80%;
+}
+
+@media all and (max-width: 1026px) {
+  .analytics {
+    width: 90%;
+  }
+}

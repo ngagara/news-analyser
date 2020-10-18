@@ -1,0 +1,15 @@
+.slider__user-name {
+  font-family: Roboto Slab, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1a1b22;
+  margin: 0;
+}
+
+@media all and (max-width: 769px) {
+  .slider__user-name {
+    font-size: 20px;
+  }
+}

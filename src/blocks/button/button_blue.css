@@ -1,0 +1,30 @@
+.button.button_blue {
+  width: 168px;
+  height: 64px;
+  color: #ffffff;
+  background: #2F71E5;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  border-radius: 100px;
+}
+
+@media all and (max-width: 768px) {
+  .button.button_blue {
+    width: 160px;
+    height: 56px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .button.button_blue {
+    width: 288px;
+    position: relative;
+  }
+}
+
+.button.button_blue:hover {
+  background: #347EFF;
+}
+
+.button.button_blue:focus {
+  background: #2A65CC;
+}

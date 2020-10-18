@@ -1,0 +1,10 @@
+.diagram__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 1026px) {
+  .diagram__container {
+    width: 90%;
+  }
+}

@@ -1,0 +1,16 @@
+.client-info__paragraph {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;
+}
+
+.client-info__paragraph:first-child {
+  margin-top: 0;
+}
+
+.client-info__paragraph:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,14 @@
+.technology__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  width: 80%;
+  margin: auto;
+}
+
+@media all and (max-width: 1240px) {
+  .technology__container {
+    width: 90%;
+  }
+}

@@ -12,7 +12,7 @@ module.exports = {
   entry: {
     index: "./src/scripts/index.js",
     about: "./src/scripts/about.js",
-    analytics: "./src/scripts/analytics.js"
+    analytics: "./src/scripts/analytics.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -26,9 +26,14 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: [
-          isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+          isDev ? "style-loader" : {
+                loader: MiniCssExtractPlugin.loader,
+                options: {
+                  publicPath: "../",
+                },
+              },
           {
             loader: "css-loader",
             options: {
@@ -40,23 +45,17 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|ico|svg)$/,
-        use: [
-          "file-loader?name=./images/[name].[ext]&esModule=false",
-          {
-            loader: "image-webpack-loader",
-            options: {},
-          },
-        ],
+        use: "file-loader?name=./images/[name].[ext]&esModule=false",
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        loader: "file-loader?name=./vendor/[name].[ext]",
+        loader: "file-loader?name=./fonts/[name].[ext]",
       },
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "./style/[name].[contenthash].css",
+      filename: "./pages/[name].[contenthash].css",
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
@@ -68,15 +67,15 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      filename: "index.html"
+      filename: "index.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/about.html",
-      filename: "about.html"
+      filename: "about.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/analytics.html",
-      filename: "analytics.html"
+      filename: "analytics.html",
     }),
     new WebpackMd5Hash(),
     new CleanWebpackPlugin(),

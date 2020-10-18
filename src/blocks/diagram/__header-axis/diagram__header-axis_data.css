@@ -1,0 +1,16 @@
+.diagram__header-axis_data {
+  max-width: 70px;
+  margin-right: 35px;
+}
+
+@media all and (max-width: 768px) {
+  .diagram__header-axis_data {
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .diagram__header-axis_data {
+    margin-right: 5px;
+  }
+}

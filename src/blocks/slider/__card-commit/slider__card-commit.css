@@ -1,0 +1,24 @@
+.slider__card-commit {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  min-height: 288px;
+  background: #ffffff;
+  border-radius: 16px;
+  margin-right: 16px;
+}
+
+@media all and (max-width: 769px) {
+  .slider__card-commit {
+    margin-right: 8px;
+    min-width: 336px;
+    min-height: 242px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .slider__card-commit {
+    min-width: 288px;
+    min-height: 264px;
+  }
+}
