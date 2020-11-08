@@ -1,9 +1,11 @@
-.slider__button-nav:hover {
-  cursor: pointer;
+@media all and (max-width: 769px) {
+  .swiper-button-prev.slider__button-nav {
+    display: none;
+  }
 }
 
 @media all and (max-width: 769px) {
-  .slider__button-nav {
+  .swiper-button-next.slider__button-nav {
     display: none;
   }
 }

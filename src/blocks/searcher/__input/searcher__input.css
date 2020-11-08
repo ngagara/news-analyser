@@ -20,6 +20,13 @@
   caret-color: #2f71e5;
 }
 
+.searcher__input::-webkit-search-decoration,
+.searcher__input::-webkit-search-cancel-button,
+.searcher__input::-webkit-search-results-button,
+.searcher__input::-webkit-search-results-decoration {
+  display: none;
+}
+
 @media all and (max-width: 768px) {
   .searcher__input {
     height: 56px;

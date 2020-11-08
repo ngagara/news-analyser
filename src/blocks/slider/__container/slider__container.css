@@ -1,21 +1,17 @@
 .slider__container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin: 48px auto;
-  /* transform: translateX(-18%); */
+  margin-top: 48px;
+  margin-bottom: 80px;
 }
 
 @media all and (max-width: 769px) {
   .slider__container {
-    margin: 32px auto;
+    margin-top: 32px;
+    margin-bottom: 0;
   }
 }
 
 @media all and (max-width: 425px) {
   .slider__container {
-    margin: 16px auto;
+    margin-top: 0;
   }
 }

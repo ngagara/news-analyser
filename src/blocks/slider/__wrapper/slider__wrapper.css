@@ -1,0 +1,15 @@
+.slider__wrapper {
+
+}
+
+@media all and (max-width: 769px) {
+  .slider__wrapper {
+    margin-top: 32px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .slider__wrapper {
+    margin-top: 16px;
+  }
+}

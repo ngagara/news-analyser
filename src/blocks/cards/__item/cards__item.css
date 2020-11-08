@@ -1,8 +1,11 @@
 .cards__item {
   max-width: 400px;
+  min-height: 576px;
   background: #FFFFFF;
   border-radius: 16px;
   overflow: hidden;
+  list-style: none;
+  position: relative;
 }
 
 @media all and (max-width: 1024px) {
