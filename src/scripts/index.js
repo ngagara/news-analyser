@@ -67,10 +67,12 @@ import ResultSearcher from "./components/ResultSearcher.js";
   });
 
   //проверка наличия данных в локал сторадж и загрузка страницы
-  if (localStorage.getItem('articles') !== null) {
+  if (localStorage.getItem('articles') !== null || dataStorage.getNews().length === 0) {
     resultSearcher.addBlockResultCards(true);
     resultSearcher.deleteButtonAddCards(dataStorage.getNews());
     cardList.render(0, 3, dataStorage.getNews());
+  }else {
+    resultSearcher.addBlockResultCards(false);
   }
 
 })();
