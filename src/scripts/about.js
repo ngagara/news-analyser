@@ -21,6 +21,7 @@ gitHubApi
   .getCommits()
   .then((result) => {
     commitCardList.render(result);
+    console.log(result)
     mySwiper.init();
   })
   .catch((err) => {

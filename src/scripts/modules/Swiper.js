@@ -8,17 +8,17 @@ export const mySwiper = new Swiper(".swiper-container", {
   // observeParents: true,
   grabCursor: true,
   // сколько слайдв крутит
-  slidesPerGroup: 2,
+  slidesPerGroup: 1,
   // прокрутка
   loop: true,
   // повторяет 10 слайдов
   loopedSlides: 10,
   // слайдов видно
-  slidesPerView: 3,
+  slidesPerView: 10,
   spaceBetween: 16,
   breakpoints: {
     440: {
-      slidesPerView: 2,
+      // slidesPerView: 1,
       spaceBetween: 8,
     },
     769: {
@@ -35,3 +35,4 @@ export const mySwiper = new Swiper(".swiper-container", {
     prevEl: ".swiper-button-prev",
   },
 });
+
