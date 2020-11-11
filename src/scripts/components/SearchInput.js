@@ -27,9 +27,5 @@ export default class SearchInput {
     } else {
       this.button.setAttribute("disabled", true);
     }
-  }
-
-  resetInputValue() {
-    this.input.value = "";
-  }
+  };
 }

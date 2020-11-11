@@ -52,7 +52,6 @@ import ResultSearcher from "./components/ResultSearcher.js";
       cardList.clearCardList();
       resultSearcher.togglePreloader();
       resultSearcher.addBlockResultCards(false);
-      searchInput.resetInputValue();
       dataStorage.setNews(result.articles);
       resultSearcher.addBlockSearchFailed(result.articles);
       resultSearcher.addBlockResultCards(true);
@@ -67,12 +66,16 @@ import ResultSearcher from "./components/ResultSearcher.js";
   });
 
   //проверка наличия данных в локал сторадж и загрузка страницы
-  if (localStorage.getItem('articles') !== null || dataStorage.getNews().length === 0) {
-    resultSearcher.addBlockResultCards(true);
-    resultSearcher.deleteButtonAddCards(dataStorage.getNews());
-    cardList.render(0, 3, dataStorage.getNews());
-  }else {
-    resultSearcher.addBlockResultCards(false);
-  }
+  window.addEventListener("load", () => {
+    input.value = localStorage.getItem('request');
+    if (localStorage.getItem('articles') !== null || dataStorage.getNews().length === 0) {
+      resultSearcher.addBlockResultCards(true);
+      resultSearcher.deleteButtonAddCards(dataStorage.getNews());
+      cardList.render(0, 3, dataStorage.getNews());
+    }else {
+      resultSearcher.addBlockResultCards(false);
+    };
+
+  });
 
 })();

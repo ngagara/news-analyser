@@ -9,7 +9,7 @@ export const DATE = new Date();
 
 export const CURRENT_DATE = `${DATE.getFullYear()}-${DATE.getMonth()+1}-${DATE.getDate()}`;
 
-export const WEEK_AGO = `${DATE.getFullYear()}-${DATE.getMonth()+1}-${DATE.getDate() - 6}`;
+export const WEEK_AGO = `${DATE.getFullYear()}-${DATE.getMonth()+1}-${DATE.getDate() - 7}`;
 
 export const ERROR_MESSAGES  = {
   valueMissing: "Нужно ввести ключевое слово",
