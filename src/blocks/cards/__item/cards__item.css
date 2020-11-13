@@ -21,3 +21,8 @@
     min-height: 446px;
   }
 }
+
+.cards__item:hover {
+  transform: translateY(-5px);
+  transition: 1s ease;
+}

@@ -8,7 +8,7 @@ import { setMounth, setWeekDays } from "./utils/utils.js";
 const dataStorage = new DataStorage();
 const statistics = new Statistics(dataStorage);
 
-setWeekDays(document.querySelectorAll(".diagram__week-days-span"));
+setWeekDays(document.querySelectorAll(".diagram__week-days-data"));
 setMounth(document.querySelector(".diagram__header-axis_data"));
 statistics.setTitle(document.querySelector(".analytics__title"));
 statistics.setTotalResults(document.querySelector(".analytics__sum-span"));

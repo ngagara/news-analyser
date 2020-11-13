@@ -32,6 +32,7 @@ import ResultSearcher from "./components/ResultSearcher.js";
     event.preventDefault();
     cardList.render(firstCount(), secondCount(), dataStorage.getNews());
     resultSearcher.deleteButtonAddCards(dataStorage.getNews());
+    buttonAddCards.scrollIntoView({block: "end", behavior: "smooth"});
   });
 
   //событие валидация на инпут
@@ -56,6 +57,7 @@ import ResultSearcher from "./components/ResultSearcher.js";
       resultSearcher.addBlockSearchFailed(result.articles);
       resultSearcher.addBlockResultCards(true);
       cardList.render(0, 3, dataStorage.getNews());
+      window.scrollTo({top: 750, behavior: "smooth"})
       searchInput.setSubmitButtonState(true);
       resultSearcher.deleteButtonAddCards(dataStorage.getNews());
       })
@@ -65,17 +67,16 @@ import ResultSearcher from "./components/ResultSearcher.js";
       .finally(resultSearcher.togglePreloader());
   });
 
-  //проверка наличия данных в локал сторадж и загрузка страницы
   window.addEventListener("load", () => {
     input.value = localStorage.getItem('request');
-    if (localStorage.getItem('articles') !== null || dataStorage.getNews().length === 0) {
+     //проверка наличия данных в локал сторадж и загрузка страницы
+    if (localStorage.getItem('articles') !== null) {
       resultSearcher.addBlockResultCards(true);
       resultSearcher.deleteButtonAddCards(dataStorage.getNews());
       cardList.render(0, 3, dataStorage.getNews());
-    }else {
+    }else{
       resultSearcher.addBlockResultCards(false);
     };
-
   });
 
 })();
