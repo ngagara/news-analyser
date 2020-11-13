@@ -26,7 +26,7 @@ export default class Statistics {
   //Метод расставляет число в диаграмму аналитики м красит полоску
   setStatisticsDay(container) {
     let date = new Date();
-    date.setDate(date.getDate() - 7);
+    date.setDate(date.getDate() - 6);
     container.forEach((item) => {
       date.setDate(date.getDate() + 1);
       let totalRequest = this._getRequestDays(date.toISOString().substr(0, 10));
