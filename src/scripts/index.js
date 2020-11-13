@@ -32,6 +32,7 @@ import ResultSearcher from "./components/ResultSearcher.js";
     event.preventDefault();
     cardList.render(firstCount(), secondCount(), dataStorage.getNews());
     resultSearcher.deleteButtonAddCards(dataStorage.getNews());
+    // скрол новостей
     buttonAddCards.scrollIntoView({block: "end", behavior: "smooth"});
   });
 
@@ -56,6 +57,7 @@ import ResultSearcher from "./components/ResultSearcher.js";
       dataStorage.setNews(result.articles);
       resultSearcher.addBlockSearchFailed(result.articles);
       resultSearcher.addBlockResultCards(true);
+      // скрол новостей
       cardList.render(0, 3, dataStorage.getNews());
       window.scrollTo({top: 750, behavior: "smooth"})
       searchInput.setSubmitButtonState(true);
