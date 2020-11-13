@@ -4,11 +4,16 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  display: none;
   color: #df4b41;
   text-align: left;
   font-size: 14px;
   position: absolute;
-  left: 0;
+  left: 26px;
   top: 5px;
+}
+
+@media all and (max-width: 500px) {
+  .searcher__error {
+    top: 130px;
+  }
 }

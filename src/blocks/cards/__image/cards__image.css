@@ -1,4 +1,17 @@
 .cards__image {
   width: 100%;
-  object-fit: cover;
+  height: 272px;
+  background-size: auto;
+}
+
+@media all and (max-width: 1024px) {
+  .cards__image {
+    height: 150px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .cards__image {
+  height: 196px;
+  }
 }

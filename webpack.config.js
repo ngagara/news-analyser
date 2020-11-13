@@ -54,6 +54,21 @@ module.exports = {
     ],
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      chunks: ["index"],
+      template: "./src/index.html",
+      filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ["about"],
+      template: "./src/about.html",
+      filename: "about.html",
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ["analytics"],
+      template: "./src/analytics.html",
+      filename: "analytics.html",
+    }),
     new MiniCssExtractPlugin({
       filename: "./pages/[name].[contenthash].css",
     }),
@@ -64,18 +79,6 @@ module.exports = {
         preset: ["default"],
       },
       canPrint: true,
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      filename: "index.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/about.html",
-      filename: "about.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/analytics.html",
-      filename: "analytics.html",
     }),
     new WebpackMd5Hash(),
     new CleanWebpackPlugin(),

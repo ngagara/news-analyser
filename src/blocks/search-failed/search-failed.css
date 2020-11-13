@@ -3,7 +3,7 @@
 @import url(../search-failed/__text/search-failed__text.css);
 
 .search-failed {
-  display: flex;
+  display: none;
   justify-content: center;
   flex-direction: column;
   width: 100%;

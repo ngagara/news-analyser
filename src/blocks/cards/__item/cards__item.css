@@ -1,8 +1,11 @@
 .cards__item {
   max-width: 400px;
+  min-height: 576px;
   background: #FFFFFF;
   border-radius: 16px;
   overflow: hidden;
+  list-style: none;
+  position: relative;
 }
 
 @media all and (max-width: 1024px) {
@@ -17,4 +20,9 @@
     min-width: 288px;
     min-height: 446px;
   }
+}
+
+.cards__item:hover {
+  transform: translateY(-5px);
+  transition: 1s ease;
 }

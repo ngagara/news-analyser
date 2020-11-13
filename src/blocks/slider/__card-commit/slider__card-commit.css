@@ -1,4 +1,4 @@
-.slider__card-commit {
+.swiper-slide.slider__card-commit {
   display: flex;
   flex-direction: column;
   min-width: 400px;
@@ -6,10 +6,11 @@
   background: #ffffff;
   border-radius: 16px;
   margin-right: 16px;
+  margin-bottom: 48px;
 }
 
 @media all and (max-width: 769px) {
-  .slider__card-commit {
+  .swiper-slide.slider__card-commit {
     margin-right: 8px;
     min-width: 336px;
     min-height: 242px;
@@ -17,7 +18,7 @@
 }
 
 @media all and (max-width: 425px) {
-  .slider__card-commit {
+  .swiper-slide.slider__card-commit {
     min-width: 288px;
     min-height: 264px;
   }
