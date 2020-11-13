@@ -59,7 +59,7 @@ import ResultSearcher from "./components/ResultSearcher.js";
       resultSearcher.addBlockResultCards(true);
       // скрол новостей
       cardList.render(0, 3, dataStorage.getNews());
-      window.scrollTo({top: 750, behavior: "smooth"})
+      cardsContainer.scrollIntoView({block: "start", behavior: "smooth"});
       searchInput.setSubmitButtonState(true);
       resultSearcher.deleteButtonAddCards(dataStorage.getNews());
       })
