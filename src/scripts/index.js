@@ -33,7 +33,7 @@ import ResultSearcher from "./components/ResultSearcher.js";
     cardList.render(firstCount(), secondCount(), dataStorage.getNews());
     resultSearcher.deleteButtonAddCards(dataStorage.getNews());
     // скрол новостей
-    // buttonAddCards.scrollIntoView({block: "end", behavior: "smooth"});
+    buttonAddCards.scrollIntoView({block: "end", behavior: "smooth"});
   });
 
   //событие валидация на инпут
@@ -59,7 +59,7 @@ import ResultSearcher from "./components/ResultSearcher.js";
       resultSearcher.addBlockResultCards(true);
       // скрол новостей
       cardList.render(0, 3, dataStorage.getNews());
-      document.querySelector(".result-searcher").scrollIntoView({block: "start", behavior: "smooth"});
+      cardsContainer.scrollIntoView({block: "start", behavior: "smooth"});
       searchInput.setSubmitButtonState(true);
       resultSearcher.deleteButtonAddCards(dataStorage.getNews());
       })
